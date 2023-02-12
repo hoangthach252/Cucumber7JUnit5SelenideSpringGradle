@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>unsplash</name>
-	<comment>Project lib created by Buildship.</comment>
+	<name>Cucumber7JUnit5SelenideSpringGradle</name>
+	<comment>Project Cucumber7JUnit5SelenideSpringGradle created by Buildship.</comment>
 	<projects>
 	</projects>
 	<buildSpec>
@@ -15,24 +15,8 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
-		<buildCommand>
-			<name>org.springframework.ide.eclipse.boot.validation.springbootbuilder</name>
-			<arguments>
-			</arguments>
-		</buildCommand>
-		<buildCommand>
-			<name>cucumber.eclipse.builder.stepdefinition</name>
-			<arguments>
-			</arguments>
-		</buildCommand>
-		<buildCommand>
-			<name>cucumber.eclipse.builder.gherkin</name>
-			<arguments>
-			</arguments>
-		</buildCommand>
 	</buildSpec>
 	<natures>
-		<nature>cucumber.eclipse.nature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.buildship.core.gradleprojectnature</nature>
 	</natures>

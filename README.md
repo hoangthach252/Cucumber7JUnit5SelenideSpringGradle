@@ -1,21 +1,21 @@
-# Automation Framework using Cucumber JVM7 + JUnit5 + Selenide + Gradle + Allure + logback
+# Automation Framework using Cucumber JVM7 + JUnit5 + Selenide + Allure + logback + Gradle
 
-A sample BDD Automation framework using Cucumber7, JUnit 5, Selenide, Gradle, Allure, logback.
+A sample BDD Automation framework using Cucumber7, JUnit 5, Selenide, Allure, Logback, Gradle.
 
-Support running tests in parallel, sharing data among test steps and manage Objects using Spring Dependency Injection.
+Support running tests in parallel, sharing data among test steps, manage Objects using Spring Dependency Injection and clean up created data using API.
 
 Sample tests against [Unsplash](https://unsplash.com/) web app.
 
 ## Libraries Used
 
 * [Cucumber](https://cucumber.io/docs/cucumber/) - 7.11.1
-* [Junit](https://junit.org/junit5/docs/current/user-guide/) - 5.8.2
-* [Spring](https://docs.spring.io/spring-framework/docs/current/reference/html/) - 5.3.24
+* [Junit](https://junit.org/junit5/docs/current/user-guide/) - 5.9.2
+* [Spring Boot](https://docs.spring.io/spring-framework/docs/current/reference/html/) - 2.6.14
 * [Gradle](https://gradle.org/guides) - 7.4.2
 * [Selenide](https://selenide.org/documentation.html) - 5.24.2
 * [Selenide wiki](https://github.com/selenide/selenide/wiki)
 * [Allure](https://docs.qameta.io/allure/) - 2.19.0
-* [Logback](http://logback.qos.ch/manual/index.html) - 1.2.5
+* [Logback](http://logback.qos.ch/manual/index.html) - 1.2.11
 * [AssertJ](https://assertj.github.io/doc/) - 3.20.2
 
 Reference Links:
@@ -24,7 +24,7 @@ Reference Links:
 
 ## Run/Debug tests
 
-* run all tests in parallel, number of threads can be specified in RunCucumberTests.class or junit-platform.properties:
+* run all tests in parallel, number of threads can be specified in RunCucumberTests.class, junit-platform.properties or command line:
     - cucumber.execution.parallel.enabled: set to true to enable parallel execution
     - cucumber.execution.parallel.config.fixed.parallelism: integer, set number of threads
     - cucumber.execution.execution-mode.feature:
@@ -34,6 +34,7 @@ Reference Links:
 
   ```shell
   $ ./gradlew clean test --info
+  $ ./gradlew clean test -Dcucumber.execution.parallel.enabled=true --info
   ```
 
 

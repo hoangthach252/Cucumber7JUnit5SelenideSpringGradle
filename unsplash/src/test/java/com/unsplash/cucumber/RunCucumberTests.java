@@ -18,4 +18,6 @@ import org.junit.platform.suite.api.Suite;
         + " io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm")
 public class RunCucumberTests {
   // This class must be empty
+  // Above Cucumber configuration parameters also can be set in junit-platform.properties or from command line.
+  // priority order: ConfigurationParameter > command line System variables -D... > junit-platform.properties
 }

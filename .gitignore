@@ -6,7 +6,8 @@ build
 
 # test report
 target
- 
+unsplash/allure-results/ 
+
 # Eclipse files, folders and configurations
 .classpath
 

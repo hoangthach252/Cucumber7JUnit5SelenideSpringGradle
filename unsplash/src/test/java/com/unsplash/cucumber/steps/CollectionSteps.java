@@ -1,6 +1,7 @@
 package com.unsplash.cucumber.steps;
 
 import ch.qos.logback.classic.Logger;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -55,7 +56,7 @@ public class CollectionSteps {
     open(PropertyUtils.getBaseUrl() + "@" + PropertyUtils.getUserProfile() + "/collections");
   }
 
-  @When("^he can see the new collection is added in his collection$")
+  @Then("^he can see the new collection is added in his collection$")
   public void check_collection_added() throws Throwable {
     String collectionName = (String) scenarioContext.getContext(DataItem.COLLECTION_NAME);
     assertThat(collectionPage.getCollectionNameList()).contains(collectionName);

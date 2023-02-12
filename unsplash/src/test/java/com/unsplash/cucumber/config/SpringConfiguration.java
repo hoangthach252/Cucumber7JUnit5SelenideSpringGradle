@@ -8,6 +8,6 @@ import org.springframework.context.annotation.PropertySources;
 @Configuration
 @ComponentScan({ "com.unsplash.cucumber.steps", "com.unsplash.cucumber.pages", "com.unsplash.utils",
     "com.unsplash.helper" })
-@PropertySources({ @PropertySource("classpath:applicationtest.properties"), })
+@PropertySources({ @PropertySource("classpath:application.properties"), })
 public class SpringConfiguration {
 }

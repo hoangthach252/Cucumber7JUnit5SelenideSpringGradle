@@ -20,7 +20,7 @@
         </encoder>
     </appender>
 
-     <logger name="org.springframework" level="OFF"/>
+    <logger name="org.springframework" level="OFF"/>
     <logger name="com.unsplash" level="INFO"/>
 
     <root level="INFO">
